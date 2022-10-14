@@ -1,11 +1,10 @@
 import './App.css'
+import AppRouter from './routers/AppRouter'
 
 const App = () => {
 
   return (
-    <div>
-      holaaaaaaaa
-    </div>
+    <AppRouter />
   )
   
 }
