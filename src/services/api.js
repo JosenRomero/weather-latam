@@ -1,10 +1,9 @@
 import axios from "axios"
+import { countriesID } from '../countriesInfo'
 
 export const weather = async () => {
 
   const APIkey = import.meta.env.VITE_API_KEY
-
-  const countriesID = '3435910,3441575,3871336' 
 
   const options = {
     method: "GET", 
