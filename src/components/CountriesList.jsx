@@ -1,7 +1,6 @@
 import { useWeather } from '../hooks/useWeather'
-import { countriesInfo } from '../countriesInfo'
+import { countriesInfo, weatherIcon } from '../countriesInfo'
 import CountryCard from './CountryCard'
-import lightning_and_rainy from '../images/lightning_and_rainy.svg'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
 
@@ -33,7 +32,7 @@ const CountriesList = () => {
               city={countriesInfo[obj.sys.country].city}
               temp_max={obj.main.temp_max}
               temp_min={obj.main.temp_min}
-              icon={lightning_and_rainy}
+              icon={weatherIcon[obj.weather[0].main] || `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`}
             />
           })}
         

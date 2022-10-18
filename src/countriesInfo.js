@@ -18,6 +18,12 @@ import el_salvador_img from './images/el_salvador.jpg'
 import guatemala_img from './images/guatemala.jpg'
 import honduras_img from './images/honduras.jpg'
 import spain_img from './images/spain.jpg'
+import thunderstorm_img from './images/thunderstorm.svg'
+import rain_img from './images/rain.svg'
+import clear_img from './images/clear.svg'
+import clouds_img from './images/clouds.svg'
+import drizzle_img from './images/drizzle.svg'
+import snow_img from './images/snow.svg'
 
 export const countriesInfo = {
   "AR": { img: argentina_img, country: 'Argentina', city: 'Buenos Aires' },
@@ -43,3 +49,12 @@ export const countriesInfo = {
 }
 
 export const countriesID = '3435910,3441575,3871336,3439389,3646738,3903987,3936456,3652462,3688689,3530597,3703443,3553478,4568138,3492908,3617763,3621849,3583361,3598132,3600949,3117735'
+
+export const weatherIcon = {
+  "Thunderstorm": thunderstorm_img,
+  "Drizzle": drizzle_img,
+  "Rain": rain_img,
+  "Snow": snow_img,
+  "Clear": clear_img,
+  "Clouds": clouds_img
+}
