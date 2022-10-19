@@ -1,0 +1,19 @@
+.stroke-text-black {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
+.stroke-text-blue-500 {
+  text-shadow: -1px -1px 0 rgb(59 130 246), 1px -1px 0 rgb(59 130 246), -1px 1px 0 rgb(59 130 246), 1px 1px 0 rgb(59 130 246);
+}
+
+.stroke-text-blue-800 {
+  text-shadow: -1px -1px 0 rgb(30 64 175), 1px -1px 0 rgb(30 64 175), -1px 1px 0 rgb(30 64 175), 1px 1px 0 rgb(30 64 175);
+}
+
+.stroke-text-red-600 {
+  text-shadow: -1px -1px 0 rgb(220 38 38), 1px -1px 0 rgb(220 38 38), -1px 1px 0 rgb(220 38 38), 1px 1px 0 rgb(220 38 38);
+}
+
+.stroke-text-amber-600 {
+  text-shadow: -1px -1px 0 rgb(217 119 6), 1px -1px 0 rgb(217 119 6), -1px 1px 0 rgb(217 119 6), 1px 1px 0 rgb(217 119 6);
+}
