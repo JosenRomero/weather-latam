@@ -1,5 +1,5 @@
 
-const CountryCard = ({img, country, city, stroke_text, temp_max, temp_min, icon}) => {
+const CountryCard = ({img, country, city, stroke_text, temp, temp_max, temp_min, icon}) => {
 
   return (
     <div className="flex items-center text-xl md:text-3xl my-8">
@@ -9,9 +9,12 @@ const CountryCard = ({img, country, city, stroke_text, temp_max, temp_min, icon}
         <p className="stroke-text-black">{city}</p>
       </div>
       <img src={icon} className="!w-16 md:!w-32 flex-none" alt={country} />
-      <div className="ml-6 flex-none">
-        <p className="bg-red-200 p-2">{Math.floor(temp_max)}°</p>
-        <p className="bg-blue-200 p-2">{Math.floor(temp_min)}°</p>
+      <div className="ml-6 flex-none text-white">
+        {(Math.ceil(temp_max) === Math.ceil(temp_min)) ? <p className="bg-indigo-200 p-2">{Math.ceil(temp)}°</p>
+          : <>
+            <p className="bg-red-200 p-2">{Math.ceil(temp_max)}°</p>
+            <p className="bg-blue-200 p-2">{Math.ceil(temp_min)}°</p>
+        </>}
       </div>
     </div>
   )

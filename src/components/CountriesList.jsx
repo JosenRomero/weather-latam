@@ -31,6 +31,7 @@ const CountriesList = () => {
               country={countriesInfo[obj.sys.country].country}
               city={countriesInfo[obj.sys.country].city}
               stroke_text={countriesInfo[obj.sys.country].stroke_text}
+              temp={obj.main.temp}
               temp_max={obj.main.temp_max}
               temp_min={obj.main.temp_min}
               icon={weatherIcon[obj.weather[0].main] || `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`}
