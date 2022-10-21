@@ -7,7 +7,7 @@ export const weather = async () => {
 
   const options = {
     method: "GET", 
-    url: `http://api.openweathermap.org/data/2.5/group?id=${countriesID}&units=metric&appid=${APIkey}`
+    url: `https://api.openweathermap.org/data/2.5/group?id=${countriesID}&units=metric&appid=${APIkey}`
   }
 
   return await axios.request(options).then(res => res.data)
