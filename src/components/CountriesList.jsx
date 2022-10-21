@@ -3,12 +3,13 @@ import { countriesInfo, weatherIcon } from '../countriesInfo'
 import CountryCard from './CountryCard'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import Loader from './Loader'
 
 const CountriesList = () => {
 
   const { data } = useWeather();
 
-  if(!data) return <></>
+  if(!data) return <Loader />
 
   return (
     <div className="md:w-3/4 mx-auto">
