@@ -10,7 +10,7 @@ const CountryCard = ({img, country, city, stroke_text, temp, temp_max, temp_min,
           <p className={`${stroke_text} pb-3`}>{country}</p>
           <p className="stroke-text-black">{city}</p>
         </div>
-        <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col sm:flex-row items-center">
           <img src={icon} className="!w-16 md:!w-32 flex-none" alt={country} />
           <div className="mt-1 sm:mt-0 sm:ml-6 flex-none text-white">
             {(Math.ceil(temp_max) === Math.ceil(temp_min)) ? <p className="bg-indigo-200 p-2">{Math.ceil(temp)}°</p>

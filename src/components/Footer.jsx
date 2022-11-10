@@ -1,11 +1,8 @@
-import Credits from './Credits'
 
 const Footer = () => {
 
   return (
-    <div className="text-center mt-10">
-      <Credits />
-    </div>
+    <div className="text-center mt-10"></div>
   )
 
 }

@@ -8,7 +8,7 @@ const Credits = () => {
   return (
     <>
     
-      <button className="px-4 py-2 font-semibold text-sm bg-sky-400 text-white rounded-md shadow-sm" onClick={openModal}>Credits</button>
+      <button className="text-white hover:opacity-75" onClick={openModal}>Credits</button>
     
       <Modal 
         isOpen={isOpenModal} 
