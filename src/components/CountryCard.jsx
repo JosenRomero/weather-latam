@@ -1,6 +1,7 @@
 import { formatDate } from '../utils/utils'
+import ToolTip from './ToolTip'
 
-const CountryCard = ({img, country, city, stroke_text, temp, temp_max, temp_min, icon, sunrise, sunset, timezone}) => {
+const CountryCard = ({img, country, city, stroke_text, temp, icon, sunrise, sunset, timezone}) => {
 
   return (
     <div>
@@ -11,13 +12,12 @@ const CountryCard = ({img, country, city, stroke_text, temp, temp_max, temp_min,
           <p className="stroke-text-black">{city}</p>
         </div>
         <div className="flex flex-col sm:flex-row items-center">
-          <img src={icon} className="!w-16 md:!w-32 flex-none" alt={country} />
+          <img src={icon} className="!w-16 lg:!w-32 flex-none" alt={country} />
           <div className="mt-1 sm:mt-0 sm:ml-6 flex-none text-white">
-            {(Math.ceil(temp_max) === Math.ceil(temp_min)) ? <p className="bg-indigo-200 p-2">{Math.ceil(temp)}°</p>
-              : <>
-                <p className="bg-red-200 p-2">{Math.ceil(temp_max)}°</p>
-                <p className="bg-blue-200 p-2">{Math.ceil(temp_min)}°</p>
-            </>}
+            <p className="bg-indigo-200 p-2 text-xl md:text-4xl tooltip">
+              {Math.round(temp)}°
+              <ToolTip text="Temperatura Actual" />
+            </p>
           </div>
         </div>
       </div>

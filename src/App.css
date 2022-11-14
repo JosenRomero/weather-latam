@@ -30,6 +30,14 @@ a:hover {
   animation: move 5s linear infinite;
 }
 
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 @keyframes move {
   0% { width: 0% }
   100% { width: 100% }
