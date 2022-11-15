@@ -33,7 +33,8 @@ const CountriesList = () => {
               city={countriesInfo[obj.sys.country].city}
               stroke_text={countriesInfo[obj.sys.country].stroke_text}
               temp={obj.main.temp}
-              icon={weatherIcon[obj.weather[0].main] || `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`}
+              icon={weatherIcon[obj.weather[0].main] || `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`}
+              weather_description={obj.weather[0].description}
               sunrise={obj.sys.sunrise}
               sunset={obj.sys.sunset}
               timezone={obj.sys.timezone}
