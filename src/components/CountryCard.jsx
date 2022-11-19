@@ -25,8 +25,8 @@ const CountryCard = ({img, country, city, stroke_text, temp, icon, weather_descr
         </div>
       </div>
       <div className="flex bg-sky-100 text-stone-500">
-        <p className="grow">Amaneció: {formatDate(sunrise, timezone)}</p>
-        <p className="grow">Anochecerá: {formatDate(sunset, timezone)}</p>
+        <p className="grow">Amanecer: {formatDate(sunrise, timezone)}</p>
+        <p className="grow">Atardecer: {formatDate(sunset, timezone)}</p>
       </div>
     </div>
   )
