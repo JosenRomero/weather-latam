@@ -6,7 +6,9 @@ const CountryCard = ({img, country, city, stroke_text, temp, icon, weather_descr
   return (
     <div>
       <div className="flex items-center text-xl md:text-3xl my-8">
-        <img src={img} className="!w-32 md:!w-40 flex-none" alt={country} />
+        <div className="!w-32 md:!w-40 flex-none hover:skew-y-12">
+          <img src={img} className="!w-full" alt={country} />
+        </div>
         <div className="ml-4 grow text-start text-white">
           <p className={`${stroke_text} pb-3`}>{country}</p>
           <p className="stroke-text-black">{city}</p>
