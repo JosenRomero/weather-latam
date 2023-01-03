@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     <>
       <Header />
       {children}
-      <Snow show={true} />
+      <Snow show={false} />
       <Footer />
     </>
   )
