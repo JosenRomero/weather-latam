@@ -2,7 +2,7 @@
 const NotFoundPage = () => {
 
   return (
-    <div>NotFoundPage</div>
+    <div className="text-center mt-8 text-2xl">Page Not Found</div>
   )
 
 }

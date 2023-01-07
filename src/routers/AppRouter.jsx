@@ -9,7 +9,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
